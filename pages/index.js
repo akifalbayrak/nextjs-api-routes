@@ -29,7 +29,7 @@ function HomePage() {
             <form onSubmit={submitFormHandler}>
                 <div>
                     <label htmlFor="email">Your Email Adress</label>
-                    <input type="email" id="email" ref={enteredEmail} />
+                    <input type="email" id="email" ref={emailInputRef} />
                 </div>
                 <div>
                     <label htmlFor="feedback">Your Feedback Adress</label>
@@ -37,7 +37,7 @@ function HomePage() {
                         type="text"
                         id="feedback"
                         rows="5"
-                        ref={enteredFeedback}
+                        ref={feedbackInputRef}
                     />
                 </div>
                 <button type="submit">Send Feedback</button>
